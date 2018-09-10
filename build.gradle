@@ -20,7 +20,7 @@ bootJar {
     version =  '0.1.0'
 }
 
-mainClassName = 'App'
+mainClassName = 'com.emidium.signal.Application'
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
