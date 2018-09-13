@@ -17,13 +17,14 @@ plugins {
 
 bootJar {
     baseName = 'gs-rest-service'
-    version =  '0.1.0'L
+    version =  '0.1.0'
 }
 
 mainClassName = 'com.emidium.signal.Application'
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
+    compile group: 'org.apache.commons', name: 'commons-csv', version: '1.5'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
