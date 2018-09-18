@@ -1,3 +1,4 @@
+
 buildscript {
     repositories {
         mavenCentral()
@@ -14,6 +15,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.6.RELEASE'
     id 'application'
 }
+
+
 
 bootJar {
     baseName = 'gs-rest-service'
@@ -34,4 +37,8 @@ targetCompatibility = 1.8
 repositories {
     mavenCentral()
     jcenter()
+}
+
+bootRun {
+    systemProperty 'spring.config.location', 'C:\\Dev\\signal\\config\\application.properties'
 }
